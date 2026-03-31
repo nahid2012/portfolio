@@ -17,6 +17,35 @@
   --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+/* ── Theme CSS variables ── */
+:root {
+  --bg-primary: #f0f4f8;
+  --bg-secondary: #e8edf5;
+  --bg-footer: #d4dce8;
+  --bg-hero: linear-gradient(135deg, #eef2f7 0%, #dce6f0 50%, #eef2f7 100%);
+  --text-primary: #0f172a;
+  --glass-bg: rgba(0, 0, 0, 0.06);
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --glass-dark-bg: rgba(240, 244, 248, 0.85);
+  --glass-dark-border: rgba(0, 0, 0, 0.08);
+  --scrollbar-track: #e2e8f0;
+  --timeline-dot-bg: #f0f4f8;
+}
+
+.dark {
+  --bg-primary: #0a0e1a;
+  --bg-secondary: #0d1224;
+  --bg-footer: #080b16;
+  --bg-hero: linear-gradient(135deg, #0a0e1a 0%, #0d1224 50%, #0a0e1a 100%);
+  --text-primary: #ffffff;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-dark-bg: rgba(10, 14, 26, 0.8);
+  --glass-dark-border: rgba(255, 255, 255, 0.08);
+  --scrollbar-track: #0a0e1a;
+  --timeline-dot-bg: #0a0e1a;
+}
+
 @keyframes gradient-x {
   0%, 100% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -32,9 +61,16 @@
 }
 
 body {
-  color: rgb(255, 255, 255);
-  background: #0a0e1a;
+  color: var(--text-primary);
+  background: var(--bg-primary);
 }
+
+/* Light-mode text overrides */
+html:not(.dark) .text-white { color: #0f172a; }
+html:not(.dark) .text-gray-300 { color: #374151; }
+html:not(.dark) .text-gray-400 { color: #4b5563; }
+html:not(.dark) .text-gray-500 { color: #6b7280; }
+html:not(.dark) .text-gray-600 { color: #9ca3af; }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
@@ -42,7 +78,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0e1a;
+  background: var(--scrollbar-track);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -60,17 +96,17 @@ body {
 }
 
 @utility glass {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--glass-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--glass-border);
 }
 
 @utility glass-dark {
-  background: rgba(10, 14, 26, 0.8);
+  background: var(--glass-dark-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--glass-dark-border);
 }
 
 @utility gradient-text {

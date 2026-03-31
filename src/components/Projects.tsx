@@ -45,7 +45,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="section-padding" style={{ background: "#0d1224" }}>
+    <section id="projects" className="section-padding" style={{ background: "var(--bg-secondary)" }}>
       <div className="max-container">
         <SectionTitle
           title="Featured Projects"

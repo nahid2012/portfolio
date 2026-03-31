@@ -28,13 +28,13 @@ export default function Contact() {
 
   const socialLinks = [
     { icon: <FaGithub size={20} />, label: "GitHub", url: "https://github.com/nahid2012", color: "#ffffff" },
-    { icon: <FaFacebook size={20} />, label: "Facebook", url: "https://facebook.com/nahid2012", color: "#1877f2" },
+    { icon: <FaFacebook size={20} />, label: "Facebook", url: "https://facebook.com/nahidshah2012", color: "#1877f2" },
     { icon: <FaLinkedin size={20} />, label: "LinkedIn", url: "#", color: "#0a66c2" },
     { icon: <FaEnvelope size={20} />, label: "Email", url: "mailto:[your@email.com]", color: "#ea4335" },
   ];
 
   return (
-    <section id="contact" className="section-padding" style={{ background: "#0d1224" }}>
+    <section id="contact" className="section-padding" style={{ background: "var(--bg-secondary)" }}>
       <div className="max-container">
         <SectionTitle
           title="Get In Touch"

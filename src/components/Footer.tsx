@@ -11,13 +11,13 @@ const quickLinks = [
 
 const socials = [
   { icon: <FaGithub size={18} />, url: "https://github.com/nahid2012", label: "GitHub" },
-  { icon: <FaFacebook size={18} />, url: "https://facebook.com/nahid2012", label: "Facebook" },
+  { icon: <FaFacebook size={18} />, url: "https://facebook.com/nahidshah2012", label: "Facebook" },
   { icon: <FaLinkedin size={18} />, url: "#", label: "LinkedIn" },
 ];
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#080b16", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+    <footer style={{ background: "var(--bg-footer)", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
@@ -80,7 +80,7 @@ export default function Footer() {
           style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
         >
           <p className="text-gray-600 text-sm">
-            © 2024 Nahid Shah. All rights reserved.
+            © 2026 Nahid Shah. All rights reserved.
           </p>
           <p className="text-gray-600 text-sm flex items-center gap-1.5">
             Made with <FaHeart className="text-red-500" size={12} /> using Next.js & Tailwind

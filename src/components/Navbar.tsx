@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useSyncExternalStore } from "react";
 import { useTheme } from "next-themes";
 import { HiSun, HiMoon, HiMenu, HiX } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
@@ -14,14 +14,22 @@ const navLinks = [
   { href: "#contact", label: "Contact" },
 ];
 
+/** Hydration-safe client detection — no setState in useEffect */
+function useIsClient() {
+  return useSyncExternalStore(
+    () => () => {},  // subscribe: no-op unsubscribe
+    () => true,      // getSnapshot: client always true
+    () => false      // getServerSnapshot: server returns false
+  );
+}
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const isClient = useIsClient();
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
-    setMounted(true);
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -78,7 +86,7 @@ export default function Navbar() {
 
           {/* Theme Toggle + Mobile Menu */}
           <div className="flex items-center gap-3">
-            {mounted && (
+            {isClient && (
               <button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                 className="p-2 rounded-lg glass text-gray-300 hover:text-white transition-all duration-200 hover:scale-110"

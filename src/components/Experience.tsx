@@ -45,7 +45,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="section-padding" style={{ background: "#0a0e1a" }}>
+    <section id="experience" className="section-padding" style={{ background: "var(--bg-primary)" }}>
       <div className="max-container">
         <SectionTitle
           title="Experience"
@@ -74,7 +74,7 @@ export default function Experience() {
                 {/* Timeline dot */}
                 <div
                   className="absolute left-6 md:left-1/2 w-4 h-4 rounded-full border-2 border-accent-blue z-10 hidden sm:block"
-                  style={{ background: "#0a0e1a", transform: "translate(-50%, 8px)", boxShadow: "0 0 12px #3b82f6" }}
+                  style={{ background: "var(--timeline-dot-bg)", transform: "translate(-50%, 8px)", boxShadow: "0 0 12px #3b82f6" }}
                 />
 
                 {/* Content */}

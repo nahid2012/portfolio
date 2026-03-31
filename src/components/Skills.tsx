@@ -64,7 +64,7 @@ export default function Skills() {
   const activeCategory = categories.find((c) => c.id === activeTab) ?? categories[0];
 
   return (
-    <section id="skills" className="section-padding" style={{ background: "#0a0e1a" }}>
+    <section id="skills" className="section-padding" style={{ background: "var(--bg-primary)" }}>
       <div className="max-container">
         <SectionTitle
           title="Skills & Technologies"

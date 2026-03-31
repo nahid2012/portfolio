@@ -11,8 +11,8 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{ background: "linear-gradient(135deg, #0a0e1a 0%, #0d1224 50%, #0a0e1a 100%)" }}
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
+      style={{ background: "var(--bg-hero)" }}
     >
       {/* Animated background blobs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -127,7 +127,7 @@ export default function Hero() {
             <FaGithub size={22} />
           </a>
           <a
-            href="https://facebook.com/nahid2012"
+            href="https://facebook.com/nahidshah2012"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-xl glass text-gray-400 hover:text-white transition-all duration-300 hover:scale-110"

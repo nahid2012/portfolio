@@ -12,7 +12,7 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="section-padding" style={{ background: "#0d1224" }}>
+    <section id="about" className="section-padding" style={{ background: "var(--bg-secondary)" }}>
       <div className="max-container">
         <SectionTitle title="About Me" subtitle="Get to know me a little better" />
 
