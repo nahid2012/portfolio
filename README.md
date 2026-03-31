@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nahid Shah — Portfolio
+
+A modern, production-ready portfolio website built with **Next.js 14**, **Tailwind CSS v4**, **Framer Motion**, and **TypeScript**.
+
+🌐 **Live:** [nahidshah.me](https://nahidshah.me)
+
+## Tech Stack
+
+- **Next.js 14** (App Router, TypeScript)
+- **Tailwind CSS v4** — CSS-based configuration, glassmorphism utilities
+- **Framer Motion** — scroll-triggered and entrance animations
+- **next-themes** — dark/light mode toggle
+- **react-icons** — icon library
+
+## Features
+
+- 🎨 Dark-first design with electric blue/purple gradient accents
+- 🪟 Glassmorphism cards and navbar
+- 📱 Fully responsive (mobile-first)
+- ⚡ Smooth scroll navigation with sticky navbar
+- 🌙 Dark/Light mode toggle
+- 🎞️ Framer Motion animations throughout
+- ✨ Custom scrollbar, gradient text, gradient borders
+
+## Sections
+
+1. **Hero** — Animated intro with name, tagline, and CTA buttons
+2. **About** — Bio, photo placeholder, quick stats
+3. **Skills** — Tabbed skill grid (Frontend, Backend, DevOps, Tools)
+4. **Projects** — Study Helper (featured) + placeholder project cards
+5. **Experience** — Vertical timeline with placeholder roles
+6. **Contact** — Contact form + social links
+7. **Footer**
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # development server at http://localhost:3000
+npm run build    # production build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Customization Checklist
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [ ] Replace `[Your Photo]` — add your photo in `src/components/About.tsx`
+- [ ] Replace `[Your Email]` — update in `About.tsx`, `Contact.tsx`, and `Footer.tsx`
+- [ ] Replace `[Your Location]` — update in `About.tsx` and `Contact.tsx`
+- [ ] Replace `[Your LinkedIn]` — update LinkedIn URL in `Contact.tsx` and `Footer.tsx`
+- [ ] Fill in bio text in `About.tsx`
+- [ ] Add real Experience entries in `Experience.tsx`
+- [ ] Add more projects in `Projects.tsx`
+- [ ] Add Study Helper repo-specific GitHub link in `Projects.tsx`

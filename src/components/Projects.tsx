@@ -7,6 +7,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 const projects = [
   {
+    id: "study-helper",
     name: "Study Helper",
     description:
       "An AI-powered study assistant that helps students organize study materials, generate quizzes, and get instant explanations for complex topics.",
@@ -19,9 +20,8 @@ const projects = [
     accentColor: "#3b82f6",
   },
   {
+    id: "placeholder-1",
     name: "[Project Name]",
-    description:
-      "[Project description placeholder. Describe what this project does, the problem it solves, and key features.]",
     tech: ["React", "Node.js", "MongoDB"],
     github: "#",
     live: "",
@@ -31,9 +31,8 @@ const projects = [
     accentColor: "#a855f7",
   },
   {
+    id: "placeholder-2",
     name: "[Project Name]",
-    description:
-      "[Project description placeholder. Add your project details here — technologies used, goals, and outcomes.]",
     tech: ["Next.js", "TypeScript", "Tailwind"],
     github: "#",
     live: "",
@@ -56,7 +55,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, idx) => (
             <motion.div
-              key={project.name + idx}
+              key={project.id}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

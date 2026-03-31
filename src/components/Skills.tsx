@@ -61,7 +61,7 @@ const categories = [
 export default function Skills() {
   const [activeTab, setActiveTab] = useState("frontend");
 
-  const activeCategory = categories.find((c) => c.id === activeTab)!;
+  const activeCategory = categories.find((c) => c.id === activeTab) ?? categories[0];
 
   return (
     <section id="skills" className="section-padding" style={{ background: "#0a0e1a" }}>
