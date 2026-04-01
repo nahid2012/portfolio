@@ -10,10 +10,10 @@ const projects = [
     id: "study-helper",
     name: "Study Helper",
     description:
-      "An AI-powered study assistant that helps students organize study materials, generate quizzes, and get instant explanations for complex topics.",
-    tech: ["MERN Stack", "OpenAI API", "JWT Auth", "REST API"],
+      "An note system built for SSC students that helps them organize study materials, generate quizzes, and get instant explanations for complex topics.",
+    tech: ["PHP", "MySQL"],
     github: "https://github.com/nahid2012",
-    live: "",
+    live: "https://metro.nahidshah.pro.bd",
     status: "In Progress",
     featured: true,
     color: "from-blue-500/20 to-purple-500/20",

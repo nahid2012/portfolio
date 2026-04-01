@@ -59,7 +59,7 @@ export default function About() {
             </h3>
             <div className="space-y-4 text-gray-400 leading-relaxed">
               <p>
-                [Your bio placeholder — describe your background, passion for coding, and what drives you as a developer.]
+                Hey, I am a student from Bangladesh, currently studying in Rangpur Zilla School, and I am passionate about web development and DevOps. With a strong foundation in both frontend and backend technologies, I enjoy creating seamless user experiences and efficient server-side solutions.
               </p>
               <p>
                 I specialize in building full-stack web applications using the MERN stack (MongoDB, Express.js, React, Node.js) and have strong experience with DevOps practices including Docker, CI/CD pipelines, and Linux server administration.
@@ -73,11 +73,11 @@ export default function About() {
             <div className="mt-6 grid grid-cols-2 gap-3">
               <div className="glass rounded-xl p-3">
                 <p className="text-gray-500 text-xs font-mono uppercase tracking-wider">Location</p>
-                <p className="text-white font-medium mt-1">[Your Location]</p>
+                <p className="text-white font-medium mt-1">Rangpur, Bangladesh</p>
               </div>
               <div className="glass rounded-xl p-3">
                 <p className="text-gray-500 text-xs font-mono uppercase tracking-wider">Email</p>
-                <p className="text-accent-blue font-medium mt-1 truncate">[Your Email]</p>
+                <p className="text-accent-blue font-medium mt-1 truncate">about@nahidshah.me</p>
               </div>
               <div className="glass rounded-xl p-3">
                 <p className="text-gray-500 text-xs font-mono uppercase tracking-wider">GitHub</p>
