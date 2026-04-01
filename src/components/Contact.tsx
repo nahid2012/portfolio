@@ -30,7 +30,7 @@ export default function Contact() {
     { icon: <FaGithub size={20} />, label: "GitHub", url: "https://github.com/nahid2012", color: "#ffffff" },
     { icon: <FaFacebook size={20} />, label: "Facebook", url: "https://facebook.com/nahidshah2012", color: "#1877f2" },
     { icon: <FaLinkedin size={20} />, label: "LinkedIn", url: "#", color: "#0a66c2" },
-    { icon: <FaEnvelope size={20} />, label: "Email", url: "mailto:[your@email.com]", color: "#ea4335" },
+    { icon: <FaEnvelope size={20} />, label: "Email", url: "mailto:about@nahidshah.me", color: "#ea4335" },
   ];
 
   return (
@@ -142,7 +142,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-gray-500 text-xs font-mono uppercase">Email</p>
-                  <p className="text-white font-medium">[your@email.com]</p>
+                  <p className="text-white font-medium">about@nahidshah.me</p>
                 </div>
               </div>
               <div className="glass rounded-xl p-4 flex items-center gap-4">
@@ -154,7 +154,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-gray-500 text-xs font-mono uppercase">Location</p>
-                  <p className="text-white font-medium">[Your Location]</p>
+                  <p className="text-white font-medium">Rangpur, Bangladesh</p>
                 </div>
               </div>
             </div>
