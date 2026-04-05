@@ -55,7 +55,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="text-6xl sm:text-7xl md:text-8xl font-black mb-6 leading-tight"
+          className="text-5xl sm:text-6xl md:text-8xl font-black mb-6 leading-tight"
         >
           <span className="gradient-text">Nahid Shah</span>
         </motion.h1>
@@ -67,7 +67,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.35 }}
           className="mb-6"
         >
-          <span className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-300">
+          <span className="text-lg sm:text-2xl md:text-3xl font-semibold text-gray-300">
             Full Stack Developer{" "}
             <span className="text-accent-blue">|</span> MERN{" "}
             <span className="text-accent-purple">|</span> DevOps

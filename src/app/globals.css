@@ -60,9 +60,14 @@
   scroll-behavior: smooth;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   color: var(--text-primary);
   background: var(--bg-primary);
+  overflow-x: hidden;
 }
 
 /* Light-mode text overrides */
