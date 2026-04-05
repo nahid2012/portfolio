@@ -27,7 +27,7 @@ export default function About() {
           >
             <div className="relative">
               <div
-                className="w-72 h-72 rounded-2xl flex items-center justify-center text-6xl font-black text-white relative overflow-hidden"
+                className="w-60 h-60 sm:w-72 sm:h-72 rounded-2xl flex items-center justify-center text-6xl font-black text-white relative overflow-hidden"
                 style={{ background: "linear-gradient(135deg, #1a2238, #0d1224)", border: "2px solid transparent", backgroundClip: "padding-box" }}
               >
                 <div className="absolute inset-0 rounded-2xl" style={{ background: "linear-gradient(135deg, #3b82f6, #a855f7)", margin: "-2px", zIndex: -1 }} />
